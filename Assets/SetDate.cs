@@ -9,7 +9,7 @@ public class SetDate : MonoBehaviour
 
     private void Start()
     {
-        GameManager = GameObject.Find("GameObject").GetComponent<GameManager>();
+        GameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
     private void OnMouseDown()
     {
